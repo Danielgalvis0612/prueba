@@ -1,12 +1,407 @@
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Alejandra Marin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Alejandra Marin</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    th.producto {
+      background-color: #ffeb99;
+    }
+
+    .seleccionado {
+      background-color: #e6f2ff;
+    }
+
+    .ventas {
+      text-align: right;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>prueba</h1> 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-   <a href="https://github.com/elliotgaramendi/learning-git">comandos git</a>
+  <p> En HTML, se define un párrafo utilizando el elemento &lt;p&gt; &centerdot;
+  <h1>Alejandra Marin</h1>
+  <p>Los gatos son criaturas magicas y fascinantes que han robado nuestros corazones con su belleza, gracia y
+    personalidad unica. Sus ojos son como dos estrellas brillantes en la noche, su pelaje suave como la seda, su forma
+    es elegante y agil, su personalidad es unica y misteriosa, son grandes compañeros leales y afectuosos.</p>
+
+  <a href="https://github.com/elliotgaramendi/learning-git">comandos git</a>
+<br>
+  <img src="https://as01.epimg.net/epik/imagenes/2017/08/18/portada/1503050853_074991_1503050982_noticia_normal.jpg"
+    alt="gato" width="300">
+<br>
+    <img src="img/tigre.jpg" alt="" width="200">    
+  <ul>
+    
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <br>
+  <!--ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol-->
+  <!--esto es un comentario-->
+  &commat;
+  <video width="320" height="240" controls>
+    <source src="video/videoprueba.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <br>
+  <iframe width="420" height="315" src="https://www.youtube.com/embed/cg9Ip0_PWb4">
+  </iframe>
+  <br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/cg9Ip0_PWb4?si=XX05j3wMg5_vfm7u">
+  </iframe>
+  <br>
+  <iframe src="https://programiz.pro" title="programiz pro website" height="500" width="500"></iframe>
+  <br>
+  <table>
+    <caption>NOMINA</caption>
+    <thead>
+      <tr>
+        <th>Codigo</th>
+        <th>Apellido</th>
+        <th>Categoria</th>
+        <th>Horas</th>
+        <th>Precio hora</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>Palau</td>
+        <td>secretario</td>
+        <td>9</td>
+        <td>1000</td>
+      </tr>
+
+      <tr>
+        <td>002</td>
+        <td>Gutierrez</td>
+        <td>Adimistrativo</td>
+        <td>7</td>
+        <td>900</td>
+      </tr>
+
+      <tr>
+        <td>003</td>
+        <td>Rovina</td>
+        <td>Encargado</td>
+        <td>9</td>
+        <td>1000</td>
+      </tr>
+
+      <tr>
+        <td>004</td>
+        <td>Gimenez</td>
+        <td>Oficial</td>
+        <td>8</td>
+        <td>800</td>
+      </tr>
+      <tr>
+        <td>005</td>
+        <td>Falco</td>
+        <td>Oficial</td>
+        <td>8</td>
+        <td>800</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th class="producto">A</th>
+          <th>B</th>
+          <th>C</th>
+          <th>D</th>
+          <th>E</th>
+        </tr>
+        <tr>
+          <th>1</th>
+          <th class="producto">Producto</th>
+          <th>País</th>
+          <th>Estado</th>
+          <th>Ciudad</th>
+          <th>Ventas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="seleccionado">
+          <td>2</td>
+          <td>XBOX 360</td>
+          <td>Colombia</td>
+          <td>Antioquia</td>
+          <td>Medellín</td>
+          <td class="ventas">$ 1,081.00</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>XBOX 360</td>
+          <td>Colombia</td>
+          <td>Distrito Capital</td>
+          <td>Bogotá</td>
+          <td class="ventas">$ 1,250.00</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>XBOX 360</td>
+          <td>España</td>
+          <td>Cataluña</td>
+          <td>Barcelona</td>
+          <td class="ventas">$ 2,027.00</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>XBOX 360</td>
+          <td>España</td>
+          <td>Madrid</td>
+          <td>Madrid</td>
+          <td class="ventas">$ 1,771.00</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>XBOX 360</td>
+          <td>México</td>
+          <td>Distrito Federal</td>
+          <td>México</td>
+          <td class="ventas">$ 1,785.00</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>XBOX 360</td>
+          <td>México</td>
+          <td>Jalisco</td>
+          <td>Guadalajara</td>
+          <td class="ventas">$ 2,365.00</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>XBOX 360</td>
+          <td>México</td>
+          <td>Nuevo León</td>
+          <td>Monterrey</td>
+          <td class="ventas">$ 2,251.00</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>PlayStation 3</td>
+          <td>Colombia</td>
+          <td>Antioquia</td>
+          <td>Medellín</td>
+          <td class="ventas">$ 1,793.00</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>PlayStation 3</td>
+          <td>Colombia</td>
+          <td>Distrito Capital</td>
+          <td>Bogotá</td>
+          <td class="ventas">$ 2,193.00</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>PlayStation 3</td>
+          <td>España</td>
+          <td>Cataluña</td>
+          <td>Barcelona</td>
+          <td class="ventas">$ 2,102.00</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>PlayStation 3</td>
+          <td>España</td>
+          <td>Madrid</td>
+          <td>Madrid</td>
+          <td class="ventas">$ 2,500.00</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>PlayStation 3</td>
+          <td>México</td>
+          <td>Distrito Federal</td>
+          <td>México</td>
+          <td class="ventas">$ 1,499.00</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>PlayStation 3</td>
+          <td>México</td>
+          <td>Jalisco</td>
+          <td>Guadalajara</td>
+          <td class="ventas">$ 1,571.00</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>PlayStation 3</td>
+          <td>México</td>
+          <td>Nuevo León</td>
+          <td>Monterrey</td>
+          <td class="ventas">$ 2,119.00</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Wii</td>
+          <td>Colombia</td>
+          <td>Antioquia</td>
+          <td>Medellín</td>
+          <td class="ventas">$ 1,960.00</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Wii</td>
+          <td>Colombia</td>
+          <td>Distrito Capital</td>
+          <td>Bogotá</td>
+          <td class="ventas">$ 2,063.00</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Wii</td>
+          <td>España</td>
+          <td>Cataluña</td>
+          <td>Barcelona</td>
+          <td class="ventas">$ 1,539.00</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>Wii</td>
+          <td>España</td>
+          <td>Madrid</td>
+          <td>Madrid</td>
+          <td class="ventas">$ 1,241.00</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Wii</td>
+          <td>México</td>
+          <td>Distrito Federal</td>
+          <td>México</td>
+          <td class="ventas">$ 2,078.00</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>Wii</td>
+          <td>México</td>
+          <td>Jalisco</td>
+          <td>Guadalajara</td>
+          <td class="ventas">$ 1,300.00</td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>Wii</td>
+          <td>México</td>
+          <td>Nuevo León</td>
+          <td>Monterrey</td>
+          <td class="ventas">$ 1,309.00</td>
+        
+      </tbody>
+    </table>
+
+    <form action="https://www.w3schools.com/action_page.php" method="get">
+      <label for="nombre">First name:</label><br>
+      <input type="text" id="nombre" name="nombre" value=""><br>
+
+      <label for="Apellido">Last name:</label><br>
+      <input type="text" id="Apellido" name="Apellido" value=""><br><br>
+
+      <input type="submit" value="Submit">
+    </form> 
+
+
+
+
+
+
+
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+  
+      <fieldset>
+        <legend>Contact Preferences</legend>
+        <label>Preferred Contact Method:</label>
+        <input type="radio" id="contact-email" name="contact_method" value="email" checked>
+        <label for="contact-email">Email</label>
+  
+        <input type="radio" id="contact-phone" name="contact_method" value="phone">
+        <label for="contact-phone">Phone</label>
+  
+        <label for="phone">Phone Number (if phone is selected):</label>
+        <input type="text" id="phone" name="phone" placeholder="Optional">
+      </fieldset>
+  
+      <fieldset>
+        <legend>Details</legend>
+        <label for="subject">Reason for Contact:</label>
+        <select id="subject" name="subject">
+          <option value="general">General Inquiry</option>
+          <option value="support">Technical Support</option>
+          <option value="sales">Sales Inquiry</option>
+        </select>
+  
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </fieldset>
+  
+      <fieldset>
+        <legend>Optional Information</legend>
+        <label>Areas of Interest:</label>
+        <input type="checkbox" id="interest-web" name="interests[]" value="web">
+        <label for="interest-web">Web Development</label>
+  
+        <input type="checkbox" id="interest-design" name="interests[]" value="design">
+        <label for="interest-design">Graphic Design</label>
+  
+        <input type="checkbox" id="interest-marketing" name="interests[]" value="marketing">
+        <label for="interest-marketing">Digital Marketing</label>
+      </fieldset>
+  
+      <fieldset>
+        <legend>Terms and Conditions</legend>
+        <input type="checkbox" id="agreement" name="agreement" value="agreed" required>
+        <label for="agreement">I agree to the terms and conditions.</label>
+      </fieldset>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+
 </body>
+
 </html>
